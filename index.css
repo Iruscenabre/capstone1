@@ -1,0 +1,313 @@
+* {
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0px;
+padding: 0px;
+background: url("simplebg2.png") no-repeat fixed;
+background-size: cover;
+}
+
+#text-logo {
+font-weight: bold;
+}
+
+#brandtext-logo {
+text-decoration: none;
+font-weight: bold;
+animation: blink 1s infinite;
+}
+
+@keyframes blink {
+0% {text-shadow: 0px 0px 10px red;}
+25% {text-shadow: 0px 0px 15px white;}
+50% {text-shadow: 0px 0px 10px red;}
+75% {text-shadow: 0px 0px 15px white;}
+100% {text-shadow: 0px 0px 10px red;}
+}
+
+nav ul li {
+font-size: 20px;
+font-weight: bold;
+}
+
+input[type=text] {
+outline: none;
+width: 250px;
+margin-top: 10px;
+}
+
+#button-search {
+margin-top: 10px;
+}
+
+#title {
+font-size: 65px;
+white-space: pre-line;
+line-height: 1;
+font-weight: bold;
+}
+
+#subtitle {
+font-size: 20px;
+animation: appear 1.5s ease;
+}
+
+#social-icons {
+position: relative;
+animation: appear-left 1s ease-out;
+}
+
+@keyframes appear {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+
+#welcome-text {
+position: relative;
+font-size: 45px;
+animation: appear-left 1s ease-out;
+}
+
+#myportfolio {
+position: relative;
+animation: appear-left 1s ease-in;
+}
+
+@keyframes appear-left {
+from {
+left: -100px;
+opacity: 0;
+}
+to {
+left: 0px;
+opacity: 1;
+}
+}
+
+#social-icon {
+color: white;
+}
+
+#social-icon:hover, #icon:hover, #social-icon:active, #icon:active {
+color: red;
+border: 1px solid white;
+padding: 5px;
+border-radius: 20%;
+}
+
+#profile-image {
+height: 190px;
+width: 190px;
+animation: appear 1s;
+}
+
+#career-title {
+position: relative;
+font-weight: bold;
+font-size: 22px;
+animation: appear-bottom 1.5s;
+}
+
+#trainee-name {
+position: relative;
+font-weight: bold;
+font-size: 30px;
+animation: appear-bottom 1s ease-out;
+}
+
+#subscription-button {
+position: relative;
+animation: appear-bottom 1s;
+}
+
+.modal-title {
+font-size: 30px;
+}
+
+#modal-check-icon {
+font-size: 34px; 
+color: green;
+}
+
+#modal-text-body {
+font-size: 29px;
+}
+
+#encore {
+font-size: 25px;
+}
+
+@keyframes appear-bottom {
+from {
+bottom: -100px;
+opacity: 0;
+}
+to {
+bottom: 0px;
+opacity: 1;
+}
+}
+#section {
+backdrop-filter: blur(8px);
+}
+
+#about {
+background-color: #cecece2c;
+backdrop-filter: blur(12px);
+}
+
+#about ul li {
+font-size: 19px;
+}
+
+#about-me {
+font-weight: bold;
+font-size: 45px;
+text-align: center;
+}
+
+#about-desc {
+font-size: 18px;
+white-space: pre-line;
+}
+
+#skills {
+font-weight: bold;
+}
+
+#profile-image2 {
+width: 160px;
+height: 160px;
+}
+
+#contacts {
+background-color: #00000079;
+backdrop-filter: blur(5px);
+}
+
+#contact-title {
+font-weight: bold;
+}
+
+#contact-card {
+backdrop-filter: blur(8px);
+}
+
+#icon {
+font-size: 27px;
+color: white;
+}
+
+#review {
+backdrop-filter: blur(10px);
+box-shadow: 0px 0px 30px white;
+}
+
+input {
+outline-color: red;
+padding: 5px;
+}
+
+.carousel-item img {
+height: 290px;
+width: 290px;
+}
+
+.carousel-caption {
+font-weight: bold;
+}
+
+#carousel-slide {
+backdrop-filter: blur(12px);
+}
+
+#project-title {
+font-size: 40px;
+font-weight: bold;
+}
+
+#project-content {
+white-space: pre-line;
+}
+
+#project-box:hover, #project-box:active {
+box-shadow: 0px 0px 30px red;
+}
+
+#project-content span {
+font-weight: bold;
+font-size: 30px;
+}
+
+#tool-text {
+font-weight: bold;
+}
+
+.card-text {
+white-space: pre-line;
+}
+
+#bootstrap {
+height: 150px;
+}
+
+@media screen and (max-width: 560px) {
+#title, #subtitle {
+text-align: center;
+}
+
+#brand-title {
+font-size: 55px;
+}
+
+#social-icons {
+text-align: center;
+}
+
+#contact-title {
+text-align: center;
+}
+
+@keyframes appear-left {
+from {
+top: -100px;
+opacity: 0;
+}
+to {
+top: 0px;
+opacity: 1;
+}
+}
+
+#modal-check-icon {
+font-size: 20px; 
+color: green;
+}
+
+#modal-text-body {
+font-size: 20px;
+}
+
+.modal-title {
+font-size: 25px;
+}
+}
+
+@media screen and (max-width: 820px) {
+input[type=text] {
+width: 100%;
+}
+
+input[type=text]:hover {
+width: 300px;
+}
+}
